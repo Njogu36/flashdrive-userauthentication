@@ -1,0 +1,28 @@
+{
+  "name": "login",
+  "version": "1.0.0",
+  "description": "USB DRIVE User Authentication",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Evans Mburu Njogu",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "connect-flash": "^0.1.1",
+    "express": "^4.17.1",
+    "express-messages": "^1.0.1",
+    "express-session": "^1.17.0",
+    "express-sessions": "^1.0.6",
+    "is-there": "^4.4.4",
+    "jade": "^1.11.0",
+    "mongoose": "^5.8.4",
+    "node-usb-detection": "^1.0.2",
+    "redis": "^2.8.0",
+    "redis-server": "^1.2.2",
+    "session-storage": "^1.0.1"
+  }
+}

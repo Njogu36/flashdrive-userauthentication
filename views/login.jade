@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Login
+        link(rel='icon', href='/css/image5.jpg')
+        link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css', integrity='sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm', crossorigin='anonymous')
+        style.
+              .jumbotron
+              {
+                margin-top:30px;
+                text-align:center
+              }
+              #mobile
+              {
+                display:none
+              }
+              #desktop
+              {
+                width: 100%;
+                min-height: 100vh;
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -moz-box;
+                display: -ms-flexbox;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                padding: 15px;
+                background: #009bff;
+                background: -webkit-linear-gradient(left, #0072ff, #00c6ff);
+              }
+              #main-div
+              {
+                  width: 960px;
+                  background: #fff;
+                  border-radius: 10px;
+                  overflow: hidden;
+                  display: -webkit-box;
+                  display: -webkit-flex;
+                  display: -moz-box;
+                  display: -ms-flexbox;
+                  display: flex;
+                  flex-wrap: wrap;
+                  justify-content: space-between;
+                  padding: 140px 130px 33px 95px;
+              }
+              @media (max-width: 768px) { 
+                  #mobile
+                  {
+                    display:block;
+                    text-align:center
+                  }
+                  #desktop
+                {
+                  display:none
+                }
+               }
+              
+              
+    body
+        .container-fluid#mobile
+          .row(style='margin-top:40px;')
+            .col
+               img(src="/css/pc.gif", alt="", srcset="",width='50%')
+               br
+               i Kindly view this page on a PC.
+        .container-fluid#desktop
+          .row
+            .col
+             .container
+              .row#main-div
+                
+              
+                .col-6(style='text-align:center')
+                  
+                  img(src="/css/image5.jpg", alt="", srcset="",width='80%')
+                  h5(style='opacity:0.8;font-weight:bolder;') This is a demo on how to login to a web application by using a flash drive.
+                  h6(style='opacity:0.8;font-weight:bolder;color:#009bff') Developed By Evans Mburu Njogu
+                .col-1
+                .col-4(style='text-align:center;margin-top:80px;margin-left:10px')
+                    != messages('message', locals)
+                    a(href="/login").btn.btn-primary.btn-lg.btn-block Click to Login
+                    hr
+                    a(href="/signup") Not a member, signup here.
+                    br
+                    a(href="/forgotPassword") Renew your key.
+                .col-1
+              
+          
+    script(src='https://code.jquery.com/jquery-3.2.1.slim.min.js', integrity='sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN', crossorigin='anonymous')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js', integrity='sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q', crossorigin='anonymous')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js', integrity='sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl', crossorigin='anonymous')
+    script.
+      var validate = localStorage.getItem('user')
+      if (validate!==null) {
+          window.location.replace('/dashboard')
+            
+        }
+      
+        

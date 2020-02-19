@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Signup
+        link(rel='icon', href='/css/image5.jpg')     
+        link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css', integrity='sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm', crossorigin='anonymous')
+        style.
+              .jumbotron
+              {
+                margin-top:30px;
+                text-align:center
+              }
+              #desktop
+              {
+                width: 100%;
+                min-height: 100vh;
+                display: -webkit-box;
+                display: -webkit-flex;
+                display: -moz-box;
+                display: -ms-flexbox;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                padding: 15px;
+                background: #009bff;
+                background: -webkit-linear-gradient(left, #0072ff, #00c6ff);
+              }
+              #main-div
+              {
+                  width: 960px;
+                  background: #fff;
+                  border-radius: 10px;
+                  overflow: hidden;
+                  display: -webkit-box;
+                  display: -webkit-flex;
+                  display: -moz-box;
+                  display: -ms-flexbox;
+                  display: flex;
+                  flex-wrap: wrap;
+                  justify-content: space-between;
+                  padding: 110px 130px 33px 95px;
+                  margin-top:0px;
+              }
+             
+              
+    body
+        .container-fluid#mobile
+        .container-fluid#desktop
+         .row
+          .col
+           .container
+            .row#main-div
+              
+            
+              .col-6(style='text-align:center')
+               
+               img(src="/css/image5.jpg", alt="", srcset="",width='80%')
+               h5(style='opacity:0.8;font-weight:bolder;') This is a demo on how to login to a web application by using a flash drive.
+               h6(style='opacity:0.8;font-weight:bolder;color:#009bff') Developed By Evans Mburu Njogu
+              
+              .col-5(style='margin-top:3px;margin-left:10px')
+                != messages('message', locals)
+                i(style='font-size:0.7em;margin-bottom:3px') To signup, you will need to insert a flash drive with the correct drive letter or path [#{path}] so as we can save your special key.
+                
+                h4 Signup
+                hr
+                form(action="/signup", method="post")
+                 .form-group
+                    label(for="fullname") Fullname:
+                   
+                    input.form-control.form-control-lg(type="text",name='fullname',placeholder='Enter Fullname',required)
+                 .form-group
+                   
+                    
+                    label(for="email") Email:
+                   
+                    input.form-control.form-control-lg(type="email",name='email',placeholder='Enter Email',required)
+                 .form-group
+                   
+                    button.btn.btn-lg.btn-block.btn-primary Signup
+                hr
+               
+                a(href="/") Already a member, login here.
+                  
+              .col-1
+            
+          
+    script(src='https://code.jquery.com/jquery-3.2.1.slim.min.js', integrity='sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN', crossorigin='anonymous')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js', integrity='sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q', crossorigin='anonymous')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js', integrity='sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl', crossorigin='anonymous')
+    script.
+      var validate = localStorage.getItem('user')
+      if (validate!==null) {
+          window.location.replace('/dashboard')
+            
+        }
+      
+        
