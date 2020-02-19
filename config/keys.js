@@ -4,5 +4,5 @@ module.exports =
     Secret:'FlashDisk User Authentication Concept.',
     // Change your website name here.
     Website:'FlashDisk',
-    path:'C:/Users/Evans Mburu/Desktop/'
+    path:'P:/'
 }
