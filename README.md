@@ -11,7 +11,7 @@ This project will run on a windows PC only.
  - You need Nodejs, MongoDb installed on your PC.
  - Only works on a windows PC.
  - You will need a flash drive. Name the flash drive to letter P. Any letter can be specified. The letter should be unique.
-If you have renamed your flash drive to a letter of your choice. For example letter H. Kindly go to the config folder > Inside the keys.js > rename the path property to the letter you have choosen. B default its letter P.
+If you have renamed your flash drive to a letter of your choice. For example letter H. Kindly go to the config folder > Inside the keys.js > rename the path property to the letter you have choosen. By default its letter P.
 ### Installation
 
 Use Git to clone this repository.
